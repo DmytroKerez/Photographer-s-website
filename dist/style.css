@@ -1,0 +1,355 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f0f0f0;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+body .container {
+  display: flex;
+}
+body .container aside {
+  min-width: 7em;
+  flex: 1;
+  padding: 3em 1em;
+  background: #fff;
+  text-transform: uppercase;
+}
+body .container aside h1 {
+  display: block;
+  margin: 0 auto 2em;
+}
+body .container aside h1 a {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: grey;
+  line-height: 2em;
+}
+body .container aside h1 a span {
+  display: block;
+}
+body .container aside .list-nav ul {
+  list-style: none;
+  padding: 0;
+}
+body .container aside .list-nav ul li a {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: grey;
+  line-height: 2em;
+}
+body .container aside .list-nav ul li a:hover {
+  color: #000;
+}
+
+main {
+  margin-right: 5%;
+  min-width: 0;
+  flex: 6;
+}
+main .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0 30px;
+}
+main .gallery .gallery__item {
+  width: 33.333%;
+  display: inline-flex;
+}
+main .gallery .gallery__item img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 300px;
+  height: 100%;
+}
+main .about {
+  width: 100%;
+  background: grey;
+}
+main .about .about-container {
+  padding-top: 0.5em;
+  color: #d8d7d7;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+main .about .about-container .me {
+  text-align: center;
+}
+main .about .about-container img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+main .about .about-container hr {
+  margin: 8 auto;
+}
+main .about .about-container .skills p {
+  font-size: 1em;
+}
+main .about .about-container .skills .progress {
+  height: 30px;
+  background: #fff;
+  position: relative;
+}
+main .about .about-container .skills .bar {
+  background: #929191;
+  line-height: 30px;
+  height: 100%;
+  text-align: center;
+  color: #000;
+}
+main .about .about-container .skills .bar-1 {
+  width: 95%;
+}
+main .about .about-container .skills .bar-2 {
+  width: 85%;
+}
+main .about .about-container .skills .bar-3 {
+  width: 80%;
+}
+main .about .about-container .resume {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+main .about .about-container .resume div {
+  color: #000;
+  background-color: #fff;
+  padding: 15px 10px;
+  margin: 25px 0;
+  width: 10em;
+}
+main .about .about-container .charge {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+main .about .about-container .charge .card {
+  width: 49%;
+  background: #d8d7d7;
+  text-align: center;
+  color: #585858;
+}
+main .about .about-container .charge .card .header {
+  background: #000;
+  padding: 25px;
+}
+main .about .about-container .charge .card ul {
+  padding: 0;
+  margin: 0;
+}
+main .about .about-container .charge .card ul li {
+  list-style-type: none;
+  text-align: center;
+  padding: 15px;
+  border-bottom: 2px solid grey;
+}
+main .about .about-container .charge .card ul li span {
+  display: block;
+}
+main .about .about-container .charge .card ul li span .money {
+  color: #000;
+  font-size: 1.5em;
+  margin: 20px;
+}
+main .about .about-container .charge .card footer {
+  background: #585858;
+  margin-bottom: 0%;
+}
+main .about .about-container .charge .card footer .sign-up {
+  text-decoration: none;
+  text-align: center;
+}
+main .about .about-container .charge .card footer .sign-up div {
+  color: #000;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+section.contact {
+  width: 100%;
+  padding: 1em;
+}
+section.contact form div {
+  margin-bottom: 1em;
+}
+section.contact form div label {
+  font-size: 1.2em;
+}
+section.contact form div input {
+  width: 50%;
+  height: 2em;
+  outline: none;
+}
+section.contact form div textarea {
+  resize: none;
+  width: 50%;
+  outline: none;
+  height: 100px;
+}
+section.contact form button {
+  cursor: pointer;
+  width: 7em;
+  height: 2em;
+  color: black;
+  background: #fff;
+  border: 1px solid black;
+}
+
+footer.bottom {
+  display: flex;
+  padding: 8px 15px;
+  background: grey;
+}
+footer.bottom .item-bot {
+  min-width: 0;
+  width: 32%;
+  padding: 10px;
+}
+footer.bottom .item-bot h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+footer.bottom .blog .block {
+  display: flex;
+}
+footer.bottom .blog .block .wrapper {
+  margin: auto;
+  width: 45%;
+  min-width: 50px;
+}
+footer.bottom .blog .block .wrapper img {
+  width: 100%;
+}
+footer.bottom .blog .block .descp {
+  margin: auto;
+  width: 45%;
+}
+footer.bottom .tags a {
+  padding: 3px;
+  display: inline-block;
+  margin: 1px;
+  text-decoration: none;
+  color: black;
+  background: #fff;
+  text-align: center;
+}
+footer.bottom .tags a:hover {
+  color: #fff;
+  background: #000;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal .modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  padding: 0;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+.modal .modal-content .modal-header {
+  padding: 2px 16px;
+  background-color: grey;
+  color: white;
+  text-align: center;
+}
+.modal .modal-content .modal-header .close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.modal .modal-content .modal-header .close:hover,
+.modal .modal-content .modal-header .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal .modal-content .modal-body {
+  padding: 2px 16px;
+}
+.modal .modal-content .modal-body form div {
+  margin: 1em 0;
+}
+.modal .modal-content .modal-body form div label {
+  font-size: 1.2em;
+}
+.modal .modal-content .modal-body form div input {
+  width: 100%;
+  height: 2em;
+  outline: none;
+}
+.modal .modal-content .modal-body form button {
+  width: 50%;
+  height: 2em;
+  margin-bottom: 1em;
+}
+.modal .modal-content .modal-footer {
+  height: 3em;
+  background-color: grey;
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@media (max-width: 450px) {
+  body .container {
+    display: block;
+  }
+  body .container aside {
+    padding: 1em 0;
+  }
+  body .container aside h1 {
+    margin: 0 auto;
+  }
+  body .container aside h1 a {
+    font-size: 25px;
+  }
+  body .container main {
+    margin-right: 0;
+  }
+  body .container main .gallery {
+    margin-bottom: 30px;
+    height: 100vh;
+  }
+  body .container main footer.bottom {
+    display: block;
+  }
+  body .container main footer.bottom .item-bot {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+{
+  "name": "webac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass scss/style.scss dist/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.26.10"
+  }
+}

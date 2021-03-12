@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photographer's website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+
+<body>
+    <section class="container">
+        <aside>
+            <h1>
+                <a href="#"><span>Sabrina</span><span>Smith</span></a>
+            </h1>
+            <nav class="list-nav">
+                <ul>
+                    <li><a href="#gallery">Portfolio</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <div id="gallery" class="gallery">
+                <div class="gallery__item"><img class="gallery-img" src="./images/photo-1.jpg" alt=""></div>
+                <div class="gallery__item"><img class="gallery-img" src="./images/photo-2.jpg" alt=""></div>
+                <div class="gallery__item"><img class="gallery-img" src="./images/photo-3.jpg" alt=""></div>
+                <div class="gallery__item"><img class="gallery-img" src="./images/photo-4.jpg" alt=""></div>
+                <div class="gallery__item"><img class="gallery-img" src="./images/photo-5.jpg" alt=""></div>
+                <div class="gallery__item"><img class="gallery-img" src="./images/photo-6.jpg" alt=""></div>
+                <div class="gallery__item"><img class="gallery-img" src="./images/photo-7.jpg" alt=""></div>
+                <div class="gallery__item"><img class="gallery-img" src="./images/photo-8.jpg" alt=""></div>
+                <div class="gallery__item"><img class="gallery-img" src="./images/photo-9.jpg" alt=""></div>
+            </div>
+            <section id="about" class="about">
+                <div class="about-container">
+                    <h2 class="me">About Me</h2>
+                    <img src="./images/author.jpg" alt="" />
+                    <h2>My Name</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Distinctio neque corrupti laborum eos cumque unde, illum deserunt
+                        voluptatum tempora facere. Labore nesciunt neque animi. Adipisci
+                        est porro ut tempora quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consectetur
+                        quas deserunt ipsum quae officiis nostrum ex, veniam inventore nihil iure amet nam
+                        repellendus
+                        dolorum provident commodi nesciunt dignissimos mollitia ratione? Lorem ipsum dolor sit amet
+                        consectetur, adipisicing elit. Deleniti ipsa fugiat dignissimos voluptas iure, sint eaque
+                        distinctio, maiores assumenda quae sunt neque aperiam, dolore in molestiae? Facere vitae
+                        tempore
+                        id?
+                    </p>
+                    <p>email:example@example.com</p>
+                    <p>tel: 8 800 555 35 35</p>
+                    <hr />
+                    <h2>Technical Skills</h2>
+                    <div class="skills">
+                        <p> Photography</p>
+                        <div class="progress">
+                            <div class="bar bar-1">
+                                95%
+                            </div>
+                        </div>
+                        <p> Web Design</p>
+                        <div class="progress">
+                            <div class="bar bar-2">
+                                85%
+                            </div>
+                        </div>
+                        <p> Photoshop</p>
+                        <div class="progress">
+                            <div class="bar bar-3">
+                                80%
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" download class="resume">
+                        <div>Download Resume</div>
+                    </a>
+                    <hr>
+                    <h2>How much I charge</h2>
+                    <section class="charge">
+                        <div class="basic card">
+                            <header class="header">
+                                Basic
+                            </header>
+                            <ul>
+                                <li>Web Design</li>
+                                <li>Photography</li>
+                                <li>5GB <br> Storage</li>
+                                <li>Mail <br> Support</li>
+                                <li><span class="money">$10</span><span>per month</span></li>
+                            </ul>
+                            <footer>
+                                <a id="myBtn" class="sign-up">
+                                    <div>Sing Up</div>
+                                </a>
+                            </footer>
+                        </div>
+                        <div class="pro card">
+                            <header class="header">
+                                Pro
+                            </header>
+                            <ul>
+                                <li>Web Design</li>
+                                <li>Photography</li>
+                                <li>50GB <br> Storage</li>
+                                <li>Endless <br> Support</li>
+                                <li><span class="money">$25</span><span>per month</span></li>
+                            </ul>
+                            <footer>
+                                <a id="myBtn-1" class="sign-up">
+                                    <div>Sing Up</div>
+                                </a>
+                            </footer>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Sign Up</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form method="POST" action="#">
+                            <div>
+                                <label>Name
+                                </label><br>
+                                <input placeholder="Name" type="text">
+                            </div>
+                            <div>
+                                <label>Email
+                                </label><br>
+                                <input placeholder="Example@mail.com" type="text">
+                            </div>
+                            <div>
+                                <label>Password
+                                </label><br>
+                                <input placeholder="Password" type="password">
+                            </div>
+                            <button type="submit">Sing In</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer"></div>
+
+                </div>
+
+            </div>
+            <section id="contact" class="contact">
+                <h2>Contact Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, ratione? Modi quis vitae
+                    debitis
+                    ut
+                    earum iste atque dicta possimus, sint in maiores pariatur nemo nam harum explicabo
+                    temporibus
+                    accusamus.</p>
+                <form method="POST" action="#">
+                    <div>
+                        <label>Name
+                        </label><br>
+                        <input placeholder="Name" type="text">
+                    </div>
+                    <div>
+                        <label>Email
+                        </label><br>
+                        <input placeholder="Example@mail.com" type="text">
+                    </div>
+                    <div>
+                        <label>Message
+                        </label><br>
+                        <textarea id="#" placeholder="Type a message"></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+
+            </section>
+            <footer class="bottom">
+                <div class="info item-bot">
+                    <h2>Info</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cum quod, fuga incidunt.</p>
+                </div>
+                <div class="blog item-bot">
+                    <h2>Blog Posts</h2>
+                    <div class="block">
+                        <div class="wrapper">
+                            <img src="./images/photo-10.jpg" alt="">
+                        </div>
+                        <div class="descp">
+                            Lorem sed muttis nunc
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="block">
+                        <div class="wrapper">
+                            <img src="./images/photo-11.jpg" alt="">
+                        </div>
+                        <div class="descp">
+                            Lorem sed muttis nunc
+                        </div>
+                    </div>
+                </div>
+                <div class="tags item-bot">
+                    <h2>Popular Tags</h2>
+                    <a href="https://www.apple.com/">Apple</a>
+                    <a href="https://www.pinterest.com/">Pinterest</a>
+                    <a href="https://twitter.com/">Twitter</a>
+                    <a href="https://www.facebook.com/">Facebook</a>
+                    <a href="https://www.google.com/">Google</a>
+                    <a href="https://en.wikipedia.org/wiki/New_York_City">New York</a>
+                </div>
+            </footer>
+        </main>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
